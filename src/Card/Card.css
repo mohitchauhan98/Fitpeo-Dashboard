@@ -1,0 +1,130 @@
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.card-box{
+    width: 320px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 9px;
+    gap: 10px;
+}
+.cb-icon{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(225, 247, 225);
+    border-radius: 50%;
+}
+.cb-icon svg{
+    width: 40px;
+    height: 40px;
+    color: rgb(1, 156, 1);
+}
+.cb-listicon{
+    background: rgb(236, 220, 247);
+}
+.cb-listicon svg{
+    color: rgb(173, 94, 247);
+}
+.cb-balanceicon{
+    background: rgb(202, 236, 250);
+}
+.cb-balanceicon svg{
+    color: rgb(100, 100, 231);
+}
+.cb-shoppingicon{
+    background: pink;    
+}
+.cb-shoppingicon svg{
+    color: rgb(250, 104, 128);
+}
+.cb-content{
+    display: flex;
+    flex-direction: column;
+}
+.cb-content > span:first-child{
+    font-size: 12px;
+    color: #cecece;
+}
+.cb-content > span:nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+}
+.cb-contentText{
+    display: flex;
+    align-items: center;
+}
+.content-text{
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 3px;
+}
+.content-arrow {
+    color: rgb(1, 156, 1);
+    font-size: 12px;
+}
+.content-arrow svg{
+    color: rgb(1, 156, 1);
+    width: 14px;
+    height: 14px;
+}
+.content-droparrow{
+    color: red;
+    font-size: 12px;
+}
+.content-droparrow svg{
+    color: red;
+    width: 14px;
+    height: 14px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 600px){
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .card-box {
+        width: calc(100% - 40px);
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .card-container {
+        display: grid;
+        gap: 10px;
+    }
+    .card-box{
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .card-box {
+        width: calc(100% - 40px);
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .card-box {
+        width: calc(100% - 40px);
+    }
+}
+@media only screen and (min-width: 1280px){
+    .card-container{
+        gap: 20px;
+    }
+}

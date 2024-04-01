@@ -1,0 +1,45 @@
+.donut-chart{
+    width: 30%;
+    height: 380px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+.dc-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.dc-wrap > span:first-child{
+    font-size: 20px;
+    font-weight: 600;
+}
+.dc-wrap > span:nth-child(2){
+    font-size: 12px;
+    color: #cecece;
+}
+.chart-inner{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+    .donut-chart {
+      width: 100%;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .donut-chart {
+        width: calc(100% - 40px);
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .donut-chart {
+        width: calc(100% - 40px);
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+    .donut-chart {
+        width: calc(100% - 40px);
+    }
+}

@@ -1,0 +1,98 @@
+.dashboard{
+    padding: 22px 40px 0 40px;
+}
+.db-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.db-inner{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.db-inner span{
+    font-size: 20px;
+    font-weight: 500;
+}
+.db-inner svg{
+    margin-top: 5px;
+    color: bisque;
+}
+.db-searchbox{
+    display: flex;
+    border-radius: 8px;
+    background: #fff;
+}
+.db-searchIcon{
+    color: #cecece;
+    margin: 6px 0 0 5px;
+}
+.db-searchInput{
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.chart-main{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.table-main{
+    width: 100%;
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+    .dashboard{
+        padding: 20px 20px;
+    }
+    .db-inner span{
+        font-size: 15px;
+    }
+    .db-searchbox{
+        display: none;
+    }
+    .chart-main{
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 42px);
+        row-gap: 10px;
+    }
+    
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .dashboard{
+        padding: 20px 20px;
+    }
+    .db-inner span{
+        font-size: 13px;
+    }
+    .db-searchbox{
+        display: none;
+    }
+    .chart-main{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .dashboard{
+        width: 89%;
+    }
+    .chart-main{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+    .chart-main{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
